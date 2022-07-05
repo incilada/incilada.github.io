@@ -1,0 +1,287 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  background: #FFf;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body a {
+  transition: 0.5s all;
+}
+
+#home {
+  background: url('assets/images/header-bg.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 650px;
+  position: relative;
+}
+
+.top-header {
+  padding: 2em 0;
+}
+
+.service-head h4 {
+  font-size: 1.2em;
+  color: #FFF;
+  background: #00a78e;
+  display: inline-block;
+  padding: .5em 1.5em;
+  position: relative;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-head h4:before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';
+  bottom: -9px;
+  left: 12px;
+  border-style: solid;
+  border-width: 14px 11px 0 12px;
+  border-color: #00a78e transparent transparent transparent;
+
+}
+
+/*-- services --*/
+.service-head h3 {
+  color: #1b242f;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 0.2em 0;
+}
+
+.service-head h3 span {
+  font-weight: 700;
+  font-family: 'Asap', sans-serif;
+}
+
+
+#services {
+  padding: 5em 0;
+  background: #1b242f;
+}
+
+.service-head.one h3 {
+  color: #fff;
+}
+
+.edit-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width:1280px) {
+  .service-head h3 {
+    font-size: 1.8em;
+  }
+}
+
+
+@media(max-width:991px) {
+  #home {
+    min-height: 563px;
+  }
+
+  span.border {
+    width: 29%;
+  }
+
+  span.border.two {
+    width: 27%;
+  }
+}
+
+@media(max-width:800px) {
+  span.border:after {
+    height: 7px;
+    width: 73px;
+  }
+}
+
+@media(max-width:640px) {
+  .wthree_about_right_grids {
+    margin-top: 2em;
+  }
+
+  span.border:after {
+    height: 7px;
+    width: 73px;
+  }
+
+  span.border.one:after {
+    content: ' ';
+    position: absolute;
+    background: #00a78e;
+    height: 7px;
+    display: flex;
+    width: 73px;
+  }
+
+  span.border.two:after {
+    content: ' ';
+    position: absolute;
+    background: #00a78e;
+    height: 7px;
+    display: block;
+    width: 73px;
+    top: -4px;
+    left: 43px;
+  }
+
+  .modal-dialog.about {
+    width: 611px;
+    margin: 2em auto 0;
+  }
+
+  .wthree_about_right_grid:nth-child(2) {
+    margin-bottom: 1em;
+  }
+}
+
+@media(max-width:600px) {
+  .modal-dialog.about {
+    width: 518px;
+    margin: 2em auto 0;
+  }
+}
+
+@media(max-width:480px) {
+  .wthree_about_right_grids {
+    margin-top: 1.5em;
+  }
+
+  #work,
+  .blog,
+  #services,
+  #sertifika {
+    padding: 2em 0;
+  }
+
+  .service-head h3 {
+    font-size: 1.3em;
+  }
+
+  .service-head h4 {
+    font-size: 0.9em;
+    padding: .5em 1.2em
+  }
+
+  span.border {
+    width: 40%;
+    background: #8C8989;
+    height: 1px;
+    display: block;
+    margin: 11px auto 0px;
+  }
+
+  span.border.two {
+    width: 39%;
+  }
+
+  .modal-dialog.about {
+    width: 442px;
+    margin: 2em auto 0;
+  }
+
+  .top-header {
+    padding: 1.5em 0 0 0;
+  }
+}
+
+@media(max-width:414px) {
+
+  .wthree_about_right_grid {
+    text-align: center;
+  }
+
+  .wthree_about_right_grid_right {
+    padding-right: 0;
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+
+  span.border,
+  span.border.one {
+    width: 44%;
+  }
+
+  span.border.two {
+    width: 42%;
+  }
+
+  .modal-dialog.about {
+    width: 354px;
+    margin: 2em auto 0;
+  }
+}
+
+@media(max-width:384px) {
+  .about-left-grid {
+    width: 97%;
+    float: none;
+    margin-right: 0;
+    min-height: 454px;
+    margin-left: 1em;
+  }
+}
+
+@media(max-width:320px) {
+
+  #services,
+  #sertifika {
+    padding: 1.2em 0;
+  }
+
+  span.border,
+  span.border.one {
+    width: 61%;
+  }
+
+  span.border.two {
+    width: 58%;
+  }
+}
+
+.modal-body {
+  max-height: 75vh;
+  overflow: auto;
+}
+
+  ::-webkit-scrollbar-track,
+  .widget-content ::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #f2f2f2;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+  }
+
+  ::-webkit-scrollbar,
+  .widget-content ::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+    background-color: #f2f2f2;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  .widget-content ::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgba(26, 42, 107, 0.2);
+  }

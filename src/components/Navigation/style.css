@@ -1,0 +1,151 @@
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-right {
+  float: right;
+}
+
+.navigation-right ul li {
+  display: inline-block;
+}
+
+.navigation-right ul li a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navigation-right ul li.active a {
+  color: #00a78e;
+}
+
+span.menu {
+  display: none;
+}
+
+/*-- nav-hover --*/
+.link-effect-3 a {
+  padding: 10px 0;
+  margin: 0 12px;
+  color: #797878;
+  text-shadow: none;
+  position: relative;
+}
+
+.link-effect-3 a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 7px 0px;
+  max-width: 0;
+  border-bottom: 3px solid #00a78e;
+  color: #00a78e;
+  content: attr(data-hover);
+  transition: max-width 0.5s;
+}
+
+.link-effect-3 a:hover::before {
+  max-width: 100%;
+}
+
+ul.hide {
+  display: none;
+}
+
+@media(max-width:991px) {
+  .navigation-right ul li a {
+    font-size: 0.9em;
+  }
+
+  .link-effect-3 a {
+    padding: 10px 0;
+    margin: 6px 4px;
+  }
+}
+
+@media(max-width:640px) {
+  span.menu {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .navigation-right ul {
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    z-index: 999;
+    text-align: center;
+    padding: 0px;
+    margin: 13px 0px 0px;
+  }
+
+  .navigation-right ul.nav1 li {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0em;
+  }
+
+  ul.nav1 {
+    display: none;
+    margin-top: 2em;
+    background: rgba(27, 26, 26, 0.98);
+  }
+
+  .navigation-right {
+    margin: 0.7em 0 0;
+  }
+
+  .navigation-right ul li a {
+    display: inline-block;
+  }
+
+  .navigation-right ul.nav1 li {
+    padding: 0px 0;
+  }
+
+  .navigation-right ul.nav1 li:nth-child(7) {
+    padding-bottom: 10px;
+  }
+
+  .link-effect-3 a::before {
+    padding: 10px 0px;
+  }
+}
+
+@media(max-width:480px) {
+  .navigation-right {
+    margin: 0em 0 0;
+  }
+}
+
+@media(max-width:414px) {
+  span.menu img {
+    width: 91%;
+    margin-top: 8px;
+  }
+}
+
+@media(max-width:375px) {
+  span.menu img {
+    width: 85%;
+    margin-top: 8px;
+  }
+}
+
+@media(max-width:320px) {
+  span.menu img {
+    width: 80%;
+    margin-top: 8px;
+  }
+}

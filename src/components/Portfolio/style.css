@@ -1,0 +1,359 @@
+.portfolio-head h2 {
+    color: #202020;
+    font-size: 1.8em;
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-head h2 span {
+    font-weight: 700;
+    color: #2ec06c;
+}
+
+.portfolio-head p:nth-child(2) {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #666666;
+    width: 80%;
+    margin: 1em auto 0 auto;
+}
+
+.portfolio-grid {
+    margin-bottom: 1.8em;
+}
+
+.portfolio-grid-pic {
+    position: relative;
+}
+
+.portfolio-grid-pic img {
+    width: 100%;
+}
+
+.portfolio-grid-pic-caption {
+    position: absolute;
+    background: rgba(70, 194, 122, 0.82);
+    top: 0px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.portfolio-grid-pic-caption a {
+    color: #FFF;
+    text-align: center;
+    border: 1px solid #FFF;
+    font-size: 1em;
+    padding: 0.7em 1.8em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.3em;
+    margin-top: 8em;
+    font-family: 'Asap', sans-serif;
+}
+
+.portfolio-grid-pic-caption a:hover {
+    border-color: #202020;
+    color: #202020;
+}
+
+.portfolio-grid:hover div.portfolio-grid-pic-caption {
+    display: block;
+}
+
+.portfolio-grid-info h5 {
+    color: #202020;
+    font-size: 1.4em;
+    font-family: 'Asap', sans-serif;
+    padding: 0.875em 0;
+    margin: 0;
+}
+
+.portfolio-grid-info {
+    background: #eeeeee;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+}
+
+.portfolio-grids {
+    margin-top: 3em;
+}
+
+.portfolio {
+    padding: 3.5em 0;
+}
+
+
+.sap_tabs {
+    clear: both;
+    padding: 0em 0 0em;
+}
+
+.resp-tabs-list {
+    text-align: center;
+    list-style: none;
+    margin: 3em 0 4em 0;
+    padding: 0;
+}
+
+.resp-tab-item {
+    margin: 0 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #343A4E;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #00a78e;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    transition: all 0.3s ease-out;
+    text-transform: Capitalize;
+    font-weight: 600;
+}
+
+.resp-tab-active,
+.resp-tab-item:hover {
+    color: #fff;
+    border: 2px solid #00a78e;
+    background: #00a78e;
+}
+
+.resp-tabs-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.resp-content-active,
+.resp-accordion-active {
+    display: block;
+}
+
+.team-gd img {
+    height: 100%;
+    width: 100%;
+    border-bottom: 9px solid rgba(0, 0, 0, 0.81);
+}
+
+.team-gd {
+    padding: 0;
+    position: relative;
+}
+
+#port {
+    padding: 5em 0 0 0;
+    background: #f4f4f4;
+}
+
+.hover:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+@media(max-width:1366px) {
+    #port {
+        padding: 4em 0 4em 0;
+    }
+}
+
+@media(max-width:1024px) {
+    #port {
+        padding: 3em 0 0 0;
+    }
+}
+
+@media(max-width:991px) {
+    .team-gd {
+        padding: 0;
+        width: 33%;
+        float: left;
+    }
+
+
+    .thumb:hover ul li {
+        margin: 113px 0px 0;
+    }
+}
+
+@media(max-width:800px) {
+    .thumb:hover ul li {
+        margin: 113px 0px 0;
+    }
+
+    .resp-tab-item {
+        margin: 0 3px;
+        padding: 6px 17px;
+        font-size: 16px;
+    }
+
+    .resp-tabs-list {
+        margin: 2em 0 2em 0;
+        padding: 0;
+    }
+}
+
+@media(max-width:640px) {
+    .team-gd {
+        padding: 0;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media(max-width:600px) {
+    .portfolio-grids {
+        margin-top: 1.5em;
+    }
+}
+
+@media(max-width:480px) {
+    .resp-tab-item {
+        margin: 0 0 5px 0px;
+        padding: 6px 11px;
+        font-size: 14px;
+    }
+
+    .resp-tabs-list {
+        margin: 0em 0 1em 0;
+        padding: 0;
+    }
+}
+
+@media(max-width:414px) {
+    .thumb:hover ul li {
+        margin: 99px 0px 0;
+    }
+
+    #port {
+        padding: 1.5em 0 1.5em 0;
+    }
+}
+
+@media(max-width:384px) {
+    .team-gd {
+        padding: 0;
+        width: 100%;
+        float: left;
+    }
+
+    .thumb .team_pos {
+        bottom: -83px;
+        left: 0;
+        margin-top: -35px;
+        padding: 6px 0;
+    }
+
+
+    .thumb:hover ul li {
+        margin: 123px 0px 0;
+    }
+
+    .portfolio-grids {
+        margin-top: 1.2em;
+    }
+
+    .portfolio-modal .modal-content h3 {
+        margin: 0 0 14px 0px;
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:320px) {
+    .resp-tab-item {
+        margin: 0 0px 4px 0;
+        padding: 6px 9px;
+        font-size: 13px;
+    }
+
+    .thumb .team_pos {
+        bottom: -83px;
+        left: 0;
+        margin-top: -62px;
+        padding: 6px 0;
+    }
+}
+
+.transparent-modal .modal-content {
+    background-color: rgba(0, 0, 0, 0.55);
+    overflow: auto;
+}
+
+.transparent-modal .modal-body {
+    overflow: unset !important;
+}
+
+.transparent-modal .modal-header {
+    border-bottom: none;
+    padding: 3rem 2rem;
+}
+
+.transparent-modal .modal-text {
+    font-size: 14px;
+    padding: 2em 0;
+    line-height: 1.8em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.transparent-modal .modal-img {
+    max-width: 100%;
+}
+
+.transparent-modal .modal-close .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.transparent-modal .modal-close,
+.transparent-modal .modal-close:hover,
+.transparent-modal .modal-close:active,
+.transparent-modal .modal-close:focus {
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+.transparent-modal .modal-close .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 45px;
+    background-color: #fff;
+    transform: rotate(90deg);
+}
+
+.modal-text a {
+    text-decoration: none;
+}
